@@ -1,5 +1,4 @@
-Description
-===================
+# Problem Description
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article .
 Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The
@@ -12,18 +11,7 @@ Here are the data this script processes:
 
     (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-This repository contains the R script called *run_analysis.R* that on does the following with this dataset: 
-
-1. Reads common activity labeles and feature names (both stored in separate files).
-2. Reads the observation files for TRAIN and TEST datasets (each stored in a set of separate files).
-3. Filters out all the observations but the mean and standard deviation ones.
-4. Merges the data and metadata from all the separate sources into one data frame.
-5. Aggregates the data by computing averages of each observation variable for each activity and each subject.
-6. Prints the results.
-7. Profits!
-
 # Dataset Information
-===================
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person
 performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone
@@ -44,7 +32,19 @@ For each record in the dataset it is provided:
 - Its activity label. 
 - An average computed from standard deviation and mean variables from from a 561-feature vector with time and frequency domain variables that comprised the original dataset. 
 
-## Note: features are normalized and bounded within [-1,1].
+Note: features are normalized and bounded within [-1,1].
 
-**[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+# Script
+
+This repository contains the R script called *run_analysis.R* that on does the following with this dataset: 
+
+1. Reads common activity labeles and feature names (both stored in separate files).
+2. Reads the observation files for TRAIN and TEST datasets (each stored in a set of separate files).
+3. Filters out all the observations but the mean and standard deviation ones.
+4. Merges the data and metadata from all the separate sources into one data frame.
+5. Aggregates the data by computing averages of each observation variable for each activity and each subject.
+6. Prints the results.
+7. Profits!
+
+*[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012*
 
