@@ -5,11 +5,11 @@ Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advan
 data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S
 smartphone. A full description is available at the site where the data was obtained: 
 
-    (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+    http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Here are the data this script processes: 
 
-    (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 # Dataset Information
 
@@ -34,6 +34,8 @@ For each record in the dataset it is provided:
 
 Note: features are normalized and bounded within [-1,1].
 
+*[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012*
+
 # Script
 
 This repository contains the R script called *run_analysis.R* that on does the following with this dataset: 
@@ -45,6 +47,3 @@ This repository contains the R script called *run_analysis.R* that on does the f
 5. Aggregates the data by computing averages of each observation variable for each activity and each subject.
 6. Prints the results.
 7. Profits!
-
-*[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012*
-
