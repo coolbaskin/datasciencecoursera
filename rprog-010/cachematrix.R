@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix())
     # Assign initial values of the member variables to
     #   x = matrix()    # Initialized as the default value of the function argument
     #   inv = NA
-    inv <- NA
+    inv <- NULL
 
     # Getter functions just return values of the member variables
     get_matrix <- function() { x }
@@ -41,7 +41,7 @@ makeCacheMatrix <- function(x = matrix())
     set_matrix <- function(x_new) 
     {
         x <<- x_new
-        inv <<- NA
+        inv <<- NULL
     }
 
     # Stores the matrix inverse in the member variable
@@ -54,7 +54,7 @@ makeCacheMatrix <- function(x = matrix())
     .set_inverse <- function(inv_new) { inv <<- inv_new }
 
     # TRUE if the inverse is cached, false otherwise, also internal
-    .is_inverse_cached <- function() { is.matrix(inv) }
+    .is_inverse_cached <- function() { !is.null(inv) }
 
     # Construct the object as the list of its methods and return to the user
 
