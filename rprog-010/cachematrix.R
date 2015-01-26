@@ -69,6 +69,9 @@ makeCacheMatrix <- function(x = matrix())
              ,get_inverse = get_inverse
              ,.set_inverse = .set_inverse
              ,.is_inverse_cached = .is_inverse_cached
+
+             # Class name in order to be able to verify variables to be of this class
+             ,.class = 'CacheMatrix'
         )
     ));
 }
@@ -81,6 +84,11 @@ makeCacheMatrix <- function(x = matrix())
 # Note: does not fully check for x to actually be this special object, so unexpected behavior may happen if it is not
 cacheSolve <- function(x, ...) 
 {
+    # Refuse execution if the x is not a CacheMatrix 'object'
+    if( !is.list(x) || is.null(x$.class) || x$.class != 'CacheMatrix' ) {
+        stop(paste0('Argument x is not created by "makeCacheMatrix()". Class = <', class(x), '>.'));
+    }
+
     # Check if we already have a cached inverse. If so, return it
     if( x$.is_inverse_cached() ) { return(invisible(x$get_inverse())); }
 
