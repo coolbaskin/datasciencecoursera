@@ -10,14 +10,13 @@ web site.
 
 ### Data
 
-The zip file containing the data can be downloaded here:
-
-	[specdata.zip][https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip]
+The zip file containing the data can be downloaded here: [specdata.zip][https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip]
 	
 The zip file contains 332 comma-separated-value (CSV) files containing pollution monitoring data for fine particulate
 matter (PM) air pollution at 332 locations in the United States. Each file contains data from a single monitor and the
 ID number for each monitor is contained in the file name. For example, data for monitor 200 is contained in the file
 "200.csv". Each file contains three variables:
+
 	* Date: the date of the observation in YYYY-MM-DD format (year-month-day)
 	* sulfate: the level of sulfate PM in the air on that date (measured in micrograms per cubic meter)
 	* nitrate: the level of nitrate PM in the air on that date (measured in micrograms per cubic meter)
@@ -37,20 +36,20 @@ as NA. A prototype of the function is as follows:
 
 <!-- -->
 
-pollutantmean <- function(directory, pollutant, id = 1:332) {        
-    ## 'directory' is a character vector of length 1 indicating        
-    ## the location of the CSV files
+    pollutantmean <- function(directory, pollutant, id = 1:332) {        
+        ## 'directory' is a character vector of length 1 indicating        
+        ## the location of the CSV files
 
-    ## 'pollutant' is a character vector of length 1 indicating        
-    ## the name of the pollutant for which we will calculate the        
-    ## mean; either "sulfate" or "nitrate".
+        ## 'pollutant' is a character vector of length 1 indicating        
+        ## the name of the pollutant for which we will calculate the        
+        ## mean; either "sulfate" or "nitrate".
 
-    ## 'id' is an integer vector indicating the monitor ID numbers        
-    ## to be used
+        ## 'id' is an integer vector indicating the monitor ID numbers        
+        ## to be used
 
-    ## Return the mean of the pollutant across all monitors list        
-    ## in the 'id' vector (ignoring NA values)
-}
+        ## Return the mean of the pollutant across all monitors list        
+        ## in the 'id' vector (ignoring NA values)
+    }
 
 You can see some example output from this function. The function that you write should be able to match this output.
 Please save your code to a file named pollutantmean.R.
@@ -75,21 +74,21 @@ the number of complete cases. A prototype of this function follows
 
 <!-- -->
 
-complete <- function(directory, id = 1:332) {        
-    ## 'directory' is a character vector of length 1 indicating        
-    ## the location of the CSV files
+    complete <- function(directory, id = 1:332) {        
+        ## 'directory' is a character vector of length 1 indicating        
+        ## the location of the CSV files
 
-    ## 'id' is an integer vector indicating the monitor ID numbers        
-    ## to be used                
+        ## 'id' is an integer vector indicating the monitor ID numbers        
+        ## to be used                
 
-    ## Return a data frame of the form:        
-    ## id nobs        
-    ## 1  117        
-    ## 2  1041        
-    ## ...        
-    ## where 'id' is the monitor ID number and 'nobs' is the        
-    ## number of complete cases
-}
+        ## Return a data frame of the form:        
+        ## id nobs        
+        ## 1  117        
+        ## 2  1041        
+        ## ...        
+        ## where 'id' is the monitor ID number and 'nobs' is the        
+        ## number of complete cases
+    }
 
 You can see some example output from this function. The function that you write should be able to match this output.
 Please save your code to a file named complete.R. To run the submit script for this part, make sure your working
@@ -132,17 +131,17 @@ requirement. If no monitors meet the threshold requirement, then the function sh
 
 <!-- -->
 	
-corr <- function(directory, threshold = 0) {        
-    ## 'directory' is a character vector of length 1 indicating        
-    ## the location of the CSV files
+    corr <- function(directory, threshold = 0) {        
+        ## 'directory' is a character vector of length 1 indicating        
+        ## the location of the CSV files
 
-    ## 'threshold' is a numeric vector of length 1 indicating the        
-    ## number of completely observed observations (on all        
-    ## variables) required to compute the correlation between        
-    ## nitrate and sulfate; the default is 0
+        ## 'threshold' is a numeric vector of length 1 indicating the        
+        ## number of completely observed observations (on all        
+        ## variables) required to compute the correlation between        
+        ## nitrate and sulfate; the default is 0
 
-    ## Return a numeric vector of correlations
-}
+        ## Return a numeric vector of correlations
+    }
 
 For this function you will need to use the 'cor' function in R which calculates the correlation between two vectors.
 Please read the help page for this function via '?cor' and make sure that you know how to use it.
@@ -200,24 +199,24 @@ be found at the top of the Programmi ng Assignments page. To execute the submit 
 
 <!-- -->
 
-submit()
+    submit()
 
 at the console prompt (after source-ing the file). NOTE that the submit script requires that you be connected to the
 Internet in order to work properly. When you execute the submit script in R, you will see the following menu (after
 typing in your submission login email and password):
 
 <!-- -->
-[1] 'pollutantmean' part 1
-[2] 'pollutantmean' part 2
-[3] 'pollutantmean' part 3
-[4] 'pollutantmean' part 4
-[5] 'complete' part 1
-[6] 'complete' part 2
-[7] 'complete' part 3
-[8] 'corr' part 2
-[9] 'corr' part 2
-[10] 'corr' part 2
-Which part are you submitting [1-10]? 
+    [1] 'pollutantmean' part 1
+    [2] 'pollutantmean' part 2
+    [3] 'pollutantmean' part 3
+    [4] 'pollutantmean' part 4
+    [5] 'complete' part 1
+    [6] 'complete' part 2
+    [7] 'complete' part 3
+    [8] 'corr' part 2
+    [9] 'corr' part 2
+    [10] 'corr' part 2
+    Which part are you submitting [1-10]? 
 
 We will compare the output of your functions to the correct output. For each test passed you receive the specified number of points on the Assignments List web page.
 
