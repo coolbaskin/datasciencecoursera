@@ -1,6 +1,7 @@
-Note: originally this assignment was implemented for "Computing for Data Analysis" course @ Coursera. It was later split
-into multiple courses and this assignment ended up being in "R Programming". This readme file was created based on the
-OneNote page for the course [here][https://skydrive.live.com/edit.aspx/Documents/Incoming?cid=25a48f05836d08d0&id=documents?&wd=target%28Learning.one%7cE03E3331-1042-4D7B-A4A9-113A371FC500%2fProgramming%20Assignment%201%3a%20Air%20Pollution%7cCBF3E09C-FA2F-43D7-B747-1173ACC5BDCC%2f%29]
+https://skydrive.live.com/edit.aspx/Documents/Incoming?cid=25a48f05836d08d0&id=documents?&wd=target%28Learning.one%7cE03E3331-1042-4D7B-A4A9-113A371FC500%2fProgramming%20Assignment%201%3a%20Air%20Pollution%7cCBF3E09C-FA2F-43D7-B747-1173ACC5BDCC%2f%29
+onenote:https://d.docs.live.net/25a48f05836d08d0/Documents/Incoming/Learning.one#Programming%20Assignment%201%20Air%20Pollution&section-id={E03E3331-1042-4D7B-A4A9-113A371FC500}&page-id={CBF3E09C-FA2F-43D7-B747-1173ACC5BDCC}&end
+
+Note: originally this assignment was implemented for "Computing for Data Analysis" course @ Coursera. It was later split into multiple courses and this assitnment ended up being in "R Programming"
 
 ### Introduction
 
