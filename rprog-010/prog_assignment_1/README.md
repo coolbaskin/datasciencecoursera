@@ -1,6 +1,8 @@
 Note: originally this assignment was implemented for "Computing for Data Analysis" course @ Coursera. It was later split
-into multiple courses and this assignment ended up being in "R Programming". This readme file was created based on the
-OneNote page for the course [here][https://skydrive.live.com/edit.aspx/Documents/Incoming?cid=25a48f05836d08d0&id=documents?&wd=target%28Learning.one%7cE03E3331-1042-4D7B-A4A9-113A371FC500%2fProgramming%20Assignment%201%3a%20Air%20Pollution%7cCBF3E09C-FA2F-43D7-B747-1173ACC5BDCC%2f%29]
+into multiple courses and this assignment ended up being in "R Programming". More specifically, it was a quiz for week 2 
+and the source code for the solution was copied from ...\Project.Learning.Computing_For_Data_Analysis\Week_2\Quiz\
+
+This readme file was created based on the OneNote page for the course [here][https://skydrive.live.com/edit.aspx/Documents/Incoming?cid=25a48f05836d08d0&id=documents?&wd=target%28Learning.one%7cE03E3331-1042-4D7B-A4A9-113A371FC500%2fProgramming%20Assignment%201%3a%20Air%20Pollution%7cCBF3E09C-FA2F-43D7-B747-1173ACC5BDCC%2f%29]
 
 ### Introduction
 
